@@ -2,7 +2,7 @@ const likeModel = require('../Models/likeSchema')
 const postModel = require('../Models/postSchema')
 
 
-// likes post with userId
+
 const like = async(req, res) => {
     const { userId, post } = req.body
 
@@ -19,7 +19,7 @@ const like = async(req, res) => {
     }
 }
 
-//same function as like
+
 const unlike = async(req, res) => {
     const { userId, post } = req.body
 
@@ -37,7 +37,7 @@ const unlike = async(req, res) => {
 }
 
 
-//finds the post and populates the like with username
+
 const coutLike = async(req, res) => {
     const { post } = req.body 
     console.log(post)
